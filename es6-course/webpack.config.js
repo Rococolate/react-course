@@ -6,7 +6,17 @@ var config = {
   output: {
     path: path.resolve(__dirname, './dist'),
     filename: '[name].js',
+    library: 'Animal',
+    libraryTarget: 'umd',
+    umdNamedDefine: true
   },
+  resolve: {
+    extensions: [ '.js','.css','.json'],
+    alias: {
+      Src: path.resolve(__dirname, './src'),
+    }
+  },
+  'devtool':'cheap-source-map',
   module: {
     loaders: [
       {

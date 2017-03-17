@@ -1,6 +1,6 @@
 'use static';
 
-class Animal {
+export default class Animal {
   constructor(name, age){
     this.name = name;
     this.age = age;
@@ -88,7 +88,7 @@ console.log(aa);
 
 let aa = 0;
 
-import test from './test.js';
+import test from 'Src/test';
 
 console.log(test);
 
